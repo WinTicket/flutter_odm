@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:odm/odm.dart';
 
@@ -18,9 +20,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
-    _odmPlugin.initiateWithEmail("abc@gmail.com");
-    _odmPlugin.initiateWithPhoneNumber("821067777777");
-
+    if (Platform.isIOS) {
+      _odmPlugin.initiateWithEmail("abc@gmail.com");
+      _odmPlugin.initiateWithPhoneNumber("821067777777");
+    }
 
     //Typical placeholder
     return MaterialApp(

@@ -17,3 +17,7 @@ and then call the On-Device Measurement for iOS.
 
 `_odmPlugin.initiateWithEmail("abc@gmail.com");`
 `_odmPlugin.initiateWithPhoneNumber("821067777777");`
+
+Don't forget to call to verify the OS before calling the ODM function.
+
+`Platform.isIOS()`
