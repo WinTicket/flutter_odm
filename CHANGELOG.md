@@ -1,3 +1,9 @@
+## 0.0.4
+
+* Changed Description
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial release
+
+
