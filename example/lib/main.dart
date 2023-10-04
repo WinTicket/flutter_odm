@@ -22,7 +22,6 @@ class _MyAppState extends State<MyApp> {
 
     if (Platform.isIOS) {
       _odmPlugin.initiateWithEmail("abc@gmail.com");
-      _odmPlugin.initiateWithPhoneNumber("821067777777");
     }
 
     //Typical placeholder

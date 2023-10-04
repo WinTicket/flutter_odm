@@ -16,10 +16,6 @@ class MockOdmPlatform
     return Future.value(email);
   }
 
-  @override
-  Future<String> initiateWithPhoneNumber(String phoneNumber) {
-    return Future.value(phoneNumber);
-  }
 }
 
 void main() {

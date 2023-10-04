@@ -15,8 +15,4 @@ class Odm {
   Future<String> initiateWithEmail(String email) {
     return OdmPlatform.instance.initiateWithEmail(email);
   }
-
-  Future<String> initiateWithPhoneNumber(String phoneNumber) {
-    return OdmPlatform.instance.initiateWithPhoneNumber(phoneNumber);
-  }
 }

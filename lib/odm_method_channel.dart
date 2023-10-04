@@ -21,10 +21,4 @@ class MethodChannelOdm extends OdmPlatform {
     return response ?? "Error in on-device conversion with email.";
   }
 
-  @override
-  Future<String> initiateWithPhoneNumber(String phoneNumber) async {
-    final response = await methodChannel.invokeMethod<String>('initiateWithPhoneNumber', {'phoneNumber': phoneNumber});
-    return response ?? "Error in on-device conversion with phone number.";
-  }
-
 }

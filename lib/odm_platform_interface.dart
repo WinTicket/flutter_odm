@@ -30,8 +30,4 @@ abstract class OdmPlatform extends PlatformInterface {
   Future<String> initiateWithEmail(String email) {
     throw UnimplementedError('initiateWithEmail() has not been implemented.');
   }
-
-  Future<String> initiateWithPhoneNumber(String phoneNumber) {
-    throw UnimplementedError('initiateWithPhoneNumber() has not been implemented.');
-  }
 }
