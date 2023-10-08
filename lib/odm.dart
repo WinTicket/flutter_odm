@@ -5,6 +5,8 @@
 // platforms in the `pubspec.yaml` at
 // https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
 
+import 'dart:io';
+
 import 'odm_platform_interface.dart';
 
 class Odm {
@@ -13,6 +15,11 @@ class Odm {
   }
 
   Future<String> initiateWithEmail(String email) {
-    return OdmPlatform.instance.initiateWithEmail(email);
+    if (Platform.isIOS) {
+      return OdmPlatform.instance.initiateWithEmail(email);
+    } else {
+      return Future.value("Only iOS is supported");
+    }
+
   }
 }

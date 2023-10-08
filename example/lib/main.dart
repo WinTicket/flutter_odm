@@ -15,16 +15,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _odmPlugin = Odm();
 
   @override
   Widget build(BuildContext context) {
 
-    if (Platform.isIOS) {
-      _odmPlugin.initiateWithEmail("abc@gmail.com");
-    }
+    // Only iOS works. Executing this in Android will not work.
+    Odm().initiateWithEmail("abc@gmail.com");
 
-    //Typical placeholder
+    // Typical Placeholder
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(

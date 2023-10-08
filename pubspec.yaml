@@ -1,6 +1,6 @@
 name: odm
 description: On-Device Measurement for iOS apps
-version: 0.0.6
+version: 1.0.0
 homepage: 'https://github.com/kohry/flutter_odm'
 
 environment:
